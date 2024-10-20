@@ -6,13 +6,13 @@ const DonationCard = ({ logo, name, description }) => {
 
   useEffect(() => {
     const handleResize = () => {
-      setIsMobile(window.innerWidth <= 768); // Ajusta este valor según tu breakpoint para móviles
+      setIsMobile(window.innerWidth <= 768);
     };
 
-    handleResize(); // Verifica al montar el componente
-    window.addEventListener('resize', handleResize); // Agrega el listener
+    handleResize(); 
+    window.addEventListener('resize', handleResize); 
 
-    return () => window.removeEventListener('resize', handleResize); // Limpia el listener al desmontar
+    return () => window.removeEventListener('resize', handleResize); 
   }, []);
 
   const limitDescription = (desc, maxWords) => {

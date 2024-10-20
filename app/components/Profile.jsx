@@ -1,4 +1,3 @@
-// components/Profile.jsx
 
 import React from 'react';
 
@@ -40,7 +39,7 @@ const Profile = () => {
         </li>
       </ul>
 
-      {/* Botón "Donar" */}
+      
       <div className="text-center mt-5">
         <button className="bg-yellow-400 text-black font-semibold py-2 px-4 rounded hover:bg-yellow-500 transition duration-200">
           Donar

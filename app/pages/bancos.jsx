@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import LefthDashboard from '../components/LefthDashboard'; 
 import Title from '../components/Title';  
 import { Montserrat, Source_Sans_3 } from 'next/font/google';
-import DonationList from '../components/DonationList'; // Importa el nuevo componente
+import DonationList from '../components/DonationList'; 
 
 const montserrat = Montserrat({ subsets: ['latin'] });
 const sourceSans3 = Source_Sans_3({ subsets: ['latin'] });
@@ -16,7 +16,7 @@ const Bancos = () => {
 
   return (
     <div className={`min-h-screen bg-white flex relative ${montserrat.className}`}>
-      {/* Sidebar (LefthDashboard) */}
+    
       <div
         className={`${
           isMenuOpen ? 'translate-x-0' : '-translate-x-full'
@@ -25,10 +25,10 @@ const Bancos = () => {
         <LefthDashboard />
       </div>
 
-      {/* Main Content */}
+     
       <main className='flex-1 ml-3 flex flex-col items-center'>
         <div className='flex-1 flex flex-col items-center'>
-          {/* Top Section */}
+         
           <div className='w-full flex flex-col lg:flex-row lg:items-center lg:justify-between mt-2'>
             <div className='lg:hidden top-4 left-4 z-50'>
               <button
@@ -40,13 +40,13 @@ const Bancos = () => {
             </div>
           </div>
 
-          {/* Page Title */}
+          
           <Title className='text-base '>
             Bancos de Donaciones
           </Title>
 
-          {/* Donation List Component */}
-          <DonationList /> {/* Añadimos aquí el componente de listas de donaciones */}
+         
+          <DonationList />
         </div>
       </main>
     </div>

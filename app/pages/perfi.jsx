@@ -13,7 +13,7 @@ const Perfil = () => {
 
   return (
     <div className="min-h-screen bg-white flex relative">
-      {/* Sidebar (LefthDashboard) */}
+    
       <div
         className={`${
           isMenuOpen ? 'translate-x-0' : '-translate-x-full'
@@ -22,10 +22,10 @@ const Perfil = () => {
         <LefthDashboard />
       </div>
 
-      {/* Main Content */}
+    
       <main className='flex-1 ml-3 flex flex-col items-center'>
         <div className='flex-1 flex flex-col items-center'>
-          {/* Top Section */}
+         
           <div className='w-full flex flex-col lg:flex-row lg:items-center lg:justify-between mt-2'>
             <div className='lg:hidden top-4 left-4 z-50'>
               <button
@@ -37,11 +37,11 @@ const Perfil = () => {
             </div>
           </div>
 
-          {/* Page Title (opcional) */}
+          
           
 
-          {/* Profile Component */}
-          <Profile /> {/* Componente de perfil agregado aquí */}
+         
+          <Profile />
         </div>
       </main>
     </div>

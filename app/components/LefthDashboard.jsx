@@ -32,7 +32,7 @@ export default function LefthDashboard() {
     <main className='h-screen p-4 text-[#f2f6fc]' style={{ background: 'linear-gradient(90deg, #F1C21B 12%, #FFDA57 76%)' }}>
       <div className='flex flex-col items-center'>
         <div className='flex h-[5rem] w-[10rem]'>
-          {/* Logo actualizado */}
+          
           <img
             className='h-[3rem] w-[5rem]'
             src='/img/logo-patitasAlRescate.png'
@@ -40,7 +40,7 @@ export default function LefthDashboard() {
           />
         </div>
 
-        {/* Contenedor de imagen de usuario actualizado */}
+       
         <div className='my-1 flex h-[120px] w-[100px] flex-col items-center bg-white rounded-[40px] p-4 shadow-md'>
           <img className='h-20 w-20' src='/img/dog5.png' alt='User' />
           <p className='text-sm font-bold text-black'>Name</p>
@@ -49,7 +49,7 @@ export default function LefthDashboard() {
 
       <section className='mt-6 flex h-2/3 flex-col justify-between md:h-2/3 2xl:h-3/4'>
         <div className='Seccion1 mb-4'>
-          {/* Solo la sección de Tickets se mantiene */}
+          
           <Link href='/ticketsDashboard'>
             <MenuItem icon='/img/lensPerson.png' title='Bancos de alimento' selected={router.pathname === '/ticketsDashboard'} />
           </Link>

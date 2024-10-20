@@ -26,7 +26,7 @@ const DonationList = () => {
         name: 'Amigos 24/7',
         description: 'Somos una organización dedicada a la protección de animales callejeros, nuestro objetivo es su bienestar.',
       },
-    // Puedes añadir más elementos aquí si es necesario
+    
   ];
 
   return (
