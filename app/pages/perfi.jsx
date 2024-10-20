@@ -1,13 +1,10 @@
+// pages/perfil.jsx
+
 import React, { useState } from 'react';
 import LefthDashboard from '../components/LefthDashboard'; 
-import Title from '../components/Title';  
-import { Montserrat, Source_Sans_3 } from 'next/font/google';
-import DonationList from '../components/DonationList'; // Importa el nuevo componente
+import Profile from '../components/Profile'; // Importa el nuevo componente
 
-const montserrat = Montserrat({ subsets: ['latin'] });
-const sourceSans3 = Source_Sans_3({ subsets: ['latin'] });
-
-const Bancos = () => {
+const Perfil = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const toggleMenu = () => {
@@ -15,7 +12,7 @@ const Bancos = () => {
   };
 
   return (
-    <div className={`min-h-screen bg-white flex relative ${montserrat.className}`}>
+    <div className="min-h-screen bg-white flex relative">
       {/* Sidebar (LefthDashboard) */}
       <div
         className={`${
@@ -40,17 +37,15 @@ const Bancos = () => {
             </div>
           </div>
 
-          {/* Page Title */}
-          <Title className='text-base '>
-            Bancos de Donaciones
-          </Title>
+          {/* Page Title (opcional) */}
+          
 
-          {/* Donation List Component */}
-          <DonationList /> {/* Añadimos aquí el componente de listas de donaciones */}
+          {/* Profile Component */}
+          <Profile /> {/* Componente de perfil agregado aquí */}
         </div>
       </main>
     </div>
   );
 };
 
-export default Bancos;
+export default Perfil;
