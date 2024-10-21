@@ -2,7 +2,7 @@
 
 import React, { useState } from 'react';
 import LefthDashboard from '../components/LefthDashboard'; 
-import Profile from '../components/Profile'; // Importa el nuevo componente
+import Profile from '../components/Profile'; 
 
 const Perfil = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);

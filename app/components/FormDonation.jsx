@@ -11,14 +11,14 @@ const FormDonation = () => {
   return (
     <div className="h-[80vh] w-full flex md:mt-5 mt-0">
       <div className="flex h-full w-full">
-        {/* Main Content */}
+       
         <main className="w-full flex-1 bg-white p-10">
-          {/* Contenedor del título con posición sticky */}
+         
           <div className="sticky top-0 bg-white z-10">
             <h1 className="text-3xl text-yellow-500 mb-8">Agregar donación</h1>
           </div>
 
-          {/* Formulario con scroll */}
+          
           <div className="overflow-y-auto h-[calc(80vh-4rem)]">
             <form onSubmit={handleSubmit(onSubmit)} className="space-y-5">
               <div>

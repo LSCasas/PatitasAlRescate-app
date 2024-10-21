@@ -1,7 +1,13 @@
-
 import React from 'react';
+import { useRouter } from 'next/router'; // Importa useRouter
 
 const Profile = () => {
+  const router = useRouter(); // Inicializa el hook
+
+  const handleDonarClick = () => {
+    router.push("/formulario"); // Redirige a la página de donación
+  };
+
   return (
     <div className="mt-5 p-5 bg-white shadow-lg rounded-lg w-full md:h-[95vh] h-[90vh] overflow-auto">
       <div className="relative mb-5">
@@ -39,9 +45,11 @@ const Profile = () => {
         </li>
       </ul>
 
-      
       <div className="text-center mt-5">
-        <button className="bg-yellow-400 text-black font-semibold py-2 px-4 rounded hover:bg-yellow-500 transition duration-200">
+        <button 
+          onClick={handleDonarClick} // Agrega la función para redirigir
+          className="bg-yellow-400 text-black font-semibold py-2 px-4 rounded hover:bg-yellow-500 transition duration-200"
+        >
           Donar
         </button>
       </div>
@@ -54,6 +62,7 @@ const Profile = () => {
 };
 
 export default Profile;
+
 
 
 

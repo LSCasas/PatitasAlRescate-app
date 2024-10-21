@@ -1,7 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
-import { useState } from 'react'
-import Link from 'next/link'
-import { useRouter } from 'next/router'
+import { useState } from 'react';
+import Link from 'next/link';
+import { useRouter } from 'next/router';
 
 const MenuItem = ({ icon, title, onClick, selected }) => (
   <div
@@ -9,30 +9,29 @@ const MenuItem = ({ icon, title, onClick, selected }) => (
       ${selected ? 'bg-white text-black' : 'hover:bg-white text-black'}`}
     onClick={onClick}
   >
-    <img src={icon} alt={title} />
+    <img src={icon} alt={title} className="h-8 w-8" /> {/* Ajustar el tamaño aquí */}
     <p className='font-medium text-sm ml-10'>{title}</p>
   </div>
-)
+);
 
-export default function LefthDashboard() {
-  const router = useRouter()
+export default function LefthAdmin() {
+  const router = useRouter();
 
   const handleSignOut = () => {
-    window.localStorage.removeItem('token')
-    router.push('/landingPage')
-  }
+    window.localStorage.removeItem('token');
+    router.push('/landingPage');
+  };
 
-  const [isMenuOpen, setIsMenuOpen] = useState(false)
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen)
-  }
+    setIsMenuOpen(!isMenuOpen);
+  };
 
   return (
     <main className='h-screen p-4 text-[#f2f6fc]' style={{ background: 'linear-gradient(90deg, #F1C21B 12%, #FFDA57 76%)' }}>
       <div className='flex flex-col items-center'>
         <div className='flex h-[5rem] w-[10rem]'>
-          
           <img
             className='h-[3rem] w-[5rem]'
             src='/img/logo-patitasAlRescate.png'
@@ -40,7 +39,6 @@ export default function LefthDashboard() {
           />
         </div>
 
-       
         <div className='my-1 flex h-[120px] w-[100px] flex-col items-center bg-white rounded-[40px] p-4 shadow-md'>
           <img className='h-20 w-20' src='/img/dog5.png' alt='User' />
           <p className='text-sm font-bold text-black'>Name</p>
@@ -49,9 +47,14 @@ export default function LefthDashboard() {
 
       <section className='mt-6 flex h-2/3 flex-col justify-between md:h-2/3 2xl:h-3/4'>
         <div className='Seccion1 mb-4'>
-          
           <Link href='/bancos'>
             <MenuItem icon='/img/lensPerson.png' title='Bancos de alimento' selected={router.pathname === '/bancos'} />
+          </Link>
+          <Link href='/perfil'>
+            <MenuItem icon='/img/profile.png' title='Perfil' selected={router.pathname === '/perfil'} />
+          </Link>
+          <Link href='/donaciones'>
+            <MenuItem icon='/img/donation2.png' title='Donaciones' selected={router.pathname === '/donaciones'} />
           </Link>
         </div>
         <div className='Seccion2 mb-2'>
@@ -63,7 +66,6 @@ export default function LefthDashboard() {
         </div>
       </section>
     </main>
-  )
+  );
 }
-
 

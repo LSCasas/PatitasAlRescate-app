@@ -27,7 +27,7 @@ const Register = () => {
             type="text"
             {...register("name", { required: "Nombre es requerido" })}
             placeholder="Ingresa tu nombre"
-            className={`w-full px-4 py-3 border-2 ${
+            className={`w-full px-4 md:py-3 py-1 border-2 ${
               errors.name ? "border-red-500" : "border-gray-300"
             } rounded-md focus:outline-none focus:border-gray-500 text-gray-800 placeholder-gray-400`}
           />
@@ -45,7 +45,7 @@ const Register = () => {
             type="email"
             {...register("email", { required: "Correo es requerido" })}
             placeholder="Ingresa tu correo aquí"
-            className={`w-full px-4 py-3 border-2 ${
+            className={`w-full px-4 md:py-3 py-1 border-2 ${
               errors.email ? "border-red-500" : "border-gray-300"
             } rounded-md focus:outline-none focus:border-gray-500 text-gray-800 placeholder-gray-400`}
           />
@@ -63,7 +63,7 @@ const Register = () => {
             type="password"
             {...register("password", { required: "Contraseña es requerida" })}
             placeholder="Ingresa tu contraseña"
-            className={`w-full px-4 py-3 border-2 ${
+            className={`w-full px-4 md:py-3 py-1 border-2 ${
               errors.password ? "border-red-500" : "border-gray-300"
             } rounded-md focus:outline-none focus:border-gray-500 text-gray-800 placeholder-gray-400`}
           />
@@ -81,7 +81,7 @@ const Register = () => {
             type="password"
             {...register("confirmPassword", { required: "Confirma tu contraseña" })}
             placeholder="Confirma tu contraseña"
-            className={`w-full px-4 py-3 border-2 ${
+            className={`w-full px-4 md:py-3  py-1 border-2 ${
               errors.confirmPassword ? "border-red-500" : "border-gray-300"
             } rounded-md focus:outline-none focus:border-gray-500 text-gray-800 placeholder-gray-400`}
           />
@@ -99,7 +99,7 @@ const Register = () => {
             type="tel"
             {...register("phone", { required: "Teléfono es requerido" })}
             placeholder="Ingresa tu número de teléfono"
-            className={`w-full px-4 py-3 border-2 ${
+            className={`w-full px-4 md:py-3 py-1 border-2 ${
               errors.phone ? "border-red-500" : "border-gray-300"
             } rounded-md focus:outline-none focus:border-gray-500 text-gray-800 placeholder-gray-400`}
           />
@@ -115,7 +115,7 @@ const Register = () => {
           </label>
           <select
             {...register("type", { required: "Selecciona un tipo" })}
-            className={`w-full px-4 py-3 border-2 ${
+            className={`w-full px-4 md:py-3 py-1 border-2 ${
               errors.type ? "border-red-500" : "border-gray-300"
             } rounded-md focus:outline-none focus:border-gray-500 text-gray-800`}
           >
@@ -131,7 +131,7 @@ const Register = () => {
         {/* Botón de Registro */}
         <button
           type="submit"
-          className="w-full bg-yellow-400 text-black font-medium py-3 rounded-md hover:bg-yellow-500 transition"
+          className="w-full bg-yellow-400 text-black font-medium md:py-3 py-1 rounded-md hover:bg-yellow-500 transition"
         >
           Registrarme
         </button>

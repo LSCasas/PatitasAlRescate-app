@@ -5,7 +5,7 @@ const InicioSesion = () => {
   return (
     <div className="flex h-screen overflow-hidden">
      
-      <div className="bg-[#E6F3FF] flex justify-center items-start p-10 flex-[0.9]">
+      <div className="bg-[#E6F3FF]  justify-center items-start p-10 flex-[0.9] hidden md:flex">
         <img
           src="/img/dog3.png" 
           alt="Dog using computer"

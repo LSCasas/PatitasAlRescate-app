@@ -28,7 +28,7 @@ const DonationCard = ({ logo, name, description }) => {
         <p className="text-gray-600 mb-2">
           {isMobile ? limitDescription(description, 20) : limitDescription(description, 40)}
         </p>
-        <Link href="/donar">
+        <Link href="/perfil">
           <button className={`text-white py-2 px-4 rounded hover:bg-yellow-600 ${isMobile ? 'bg-yellow-500 text-sm' : 'bg-yellow-500 text-base'}`}>
             Ver
           </button>

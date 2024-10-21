@@ -51,14 +51,14 @@ const Login = () => {
         </div>
         <button
           type="submit"
-          className="w-full bg-yellow-400 text-black font-medium py-3 rounded-md hover:bg-yellow-500 transition"
+          className="w-full bg-yellow-400 text-black font-medium md:py-3 py-3 rounded-md hover:bg-yellow-500 transition"
         >
           Iniciar Sesion
         </button>
       </form>
       <p className="text-center text-sm text-gray-600 mt-4">
       No tienes una cuenta?{" "}
-        <a href="#" className="text-yellow-600 hover:underline">
+        <a href="/registro" className="text-yellow-600 hover:underline">
           Resgistrar
         </a>
       </p>
