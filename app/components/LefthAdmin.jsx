@@ -47,11 +47,11 @@ export default function LefthAdmin() {
 
       <section className='mt-6 flex h-2/3 flex-col justify-between md:h-2/3 2xl:h-3/4'>
         <div className='Seccion1 mb-4'>
-          <Link href='/bancos'>
-            <MenuItem icon='/img/lensPerson.png' title='Bancos de alimento' selected={router.pathname === '/bancos'} />
+          <Link href='/bancosAdmin'>
+            <MenuItem icon='/img/lensPerson.png' title='Bancos de alimento' selected={router.pathname === '/bancosAdmin'} />
           </Link>
-          <Link href='/perfil'>
-            <MenuItem icon='/img/profile.png' title='Perfil' selected={router.pathname === '/perfil'} />
+          <Link href='/perfilAdmin'>
+            <MenuItem icon='/img/profile.png' title='Perfil' selected={router.pathname === '/perfilAdmin'} />
           </Link>
           <Link href='/donaciones'>
             <MenuItem icon='/img/donation2.png' title='Donaciones' selected={router.pathname === '/donaciones'} />
@@ -68,4 +68,5 @@ export default function LefthAdmin() {
     </main>
   );
 }
+
 
