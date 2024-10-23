@@ -30,7 +30,7 @@ export default function Register() {
 
        
         setTimeout(() => {
-          router.push('/login');
+          router.push('/landingPage');
         }, 1000);
       } else {
         console.error("Error en el registro:", response);
