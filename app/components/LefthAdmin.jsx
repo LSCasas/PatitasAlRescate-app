@@ -9,7 +9,7 @@ const MenuItem = ({ icon, title, onClick, selected }) => (
       ${selected ? 'bg-white text-black' : 'hover:bg-white text-black'}`}
     onClick={onClick}
   >
-    <img src={icon} alt={title} className="h-8 w-8" /> {/* Ajustar el tamaño aquí */}
+    <img src={icon} alt={title} className="h-8 w-8" /> 
     <p className='font-medium text-sm ml-10'>{title}</p>
   </div>
 );

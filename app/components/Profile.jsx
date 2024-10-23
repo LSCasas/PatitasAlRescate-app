@@ -1,11 +1,11 @@
 import React from 'react';
-import { useRouter } from 'next/router'; // Importa useRouter
+import { useRouter } from 'next/router'; 
 
 const Profile = () => {
-  const router = useRouter(); // Inicializa el hook
+  const router = useRouter(); 
 
   const handleDonarClick = () => {
-    router.push("/formulario"); // Redirige a la página de donación
+    router.push("/formulario"); 
   };
 
   return (

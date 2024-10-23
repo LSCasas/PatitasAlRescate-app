@@ -1,5 +1,3 @@
-// pages/perfil.jsx
-
 import React, { useState } from 'react';
 import LefthAdmin from '../components/LefthAdmin'; 
 import Profile from '../components/Profile'; 
