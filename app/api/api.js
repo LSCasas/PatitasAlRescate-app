@@ -1,4 +1,4 @@
-const API_URL = 'http://localhost:5500';
+const API_URL = 'https://patitasalrescate-api-1.onrender.com';
 
 // REGISTER
 // CREATE USER 
