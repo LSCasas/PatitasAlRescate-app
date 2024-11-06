@@ -60,19 +60,22 @@ const Donaciones = () => {
         <LefthAdmin />  {/* Replace LefthDashboard with LefthAdmin */}
       </div>
 
+      {/* Botón de menú siempre visible en móvil en la esquina superior izquierda */}
+      <div className="lg:hidden fixed top-4 left-4 z-50">
+        <button
+          onClick={toggleMenu}
+          className="text-white bg-[#f7e736f3] p-2 rounded-md focus:outline-none"
+        >
+          {isMenuOpen ? '✖' : '☰'}
+        </button>
+      </div>
+
       <main className="flex-1 ml-3 flex flex-col items-center pt-[60px]">
         {/* Contenedor de las tarjetas con scroll y altura */}
-        <div className="overflow-y-auto max-h-[80vh] w-full mt-4 pb-7">
+        <div className="overflow-y-auto md:max-h-[80vh]  h-[80vh] w-full mt-4 pb-7">
           <div className="flex-1 flex flex-col items-center">
             <div className="w-full flex flex-col lg:flex-row lg:items-center lg:justify-between mt-2">
-              <div className="lg:hidden top-4 left-4 z-50">
-                <button
-                  onClick={toggleMenu}
-                  className="text-white bg-[#f7e736f3] p-2 rounded-md focus:outline-none"
-                >
-                  {isMenuOpen ? '✖' : '☰'}
-                </button>
-              </div>
+              {/* Este contenedor ya no tiene el botón ☰, ahora está fuera */}
             </div>
           </div>
 
