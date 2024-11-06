@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import Title from '../components/Title';
 import DonationList from '../components/DonationList';
-import LefthDashboard from '../components/LefthDashboard'; // Asegúrate de importar LefthDashboard
+import LefthAdmin from '../components/LefthAdmin'; // Importamos el nuevo LefthAdmin
 import { Montserrat, Source_Sans_3 } from 'next/font/google';
 import { getUsers } from '../api/api';
 
@@ -48,7 +48,7 @@ const Bancos = () => {
           isMenuOpen ? 'translate-x-0' : '-translate-x-full'
         } lg:translate-x-0 transform transition-transform duration-300 ease-in-out bg-gradient-to-b from-[#31416d] to-[#232c48] md:w-[30%] lg:w-[15%] w-[50%] h-full fixed lg:static z-40`}
       >
-        <LefthDashboard />
+        <LefthAdmin /> {/* Aquí usamos LefthAdmin en lugar de LefthDashboard */}
       </div>
 
       <main className="flex-1 ml-3 flex flex-col items-center">
@@ -73,4 +73,3 @@ const Bancos = () => {
 };
 
 export default Bancos;
-

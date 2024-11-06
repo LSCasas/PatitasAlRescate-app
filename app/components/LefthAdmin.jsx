@@ -47,7 +47,7 @@ export default function LefthAdmin() {
 
       <section className='mt-6 flex h-2/3 flex-col justify-between md:h-2/3 2xl:h-3/4'>
         <div className='Seccion1 mb-4'>
-          <Link href='/bancosAdmin'>
+          <Link href='/bancos2'>
             <MenuItem icon='/img/lensPerson.png' title='Bancos de alimento' selected={router.pathname === '/bancosAdmin'} />
           </Link>
           <Link href='/perfilAdmin'>

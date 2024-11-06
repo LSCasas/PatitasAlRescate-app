@@ -1,6 +1,8 @@
+// pages/perfil.jsx
+
 import React, { useState } from 'react';
-import LefthAdmin from '../components/LefthAdmin'; 
-import Profile from '../components/ProfileAdmin'; 
+import LefthDashboard from '../components/LefthDashboard'; 
+import Profile from '../components/Profile3'; 
 
 const Perfil = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -17,9 +19,10 @@ const Perfil = () => {
           isMenuOpen ? 'translate-x-0' : '-translate-x-full'
         } lg:translate-x-0 transform transition-transform duration-300 ease-in-out bg-gradient-to-b from-[#31416d] to-[#232c48] md:w-[30%] lg:w-[15%] w-[50%] h-full fixed lg:static z-40`}
       >
-        <LefthAdmin /> 
+        <LefthDashboard />
       </div>
 
+    
       <main className='flex-1 ml-3 flex flex-col items-center'>
         <div className='flex-1 flex flex-col items-center'>
          
@@ -34,6 +37,10 @@ const Perfil = () => {
             </div>
           </div>
 
+          
+          
+
+         
           <Profile />
         </div>
       </main>

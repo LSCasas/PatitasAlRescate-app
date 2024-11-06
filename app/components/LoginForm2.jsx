@@ -22,7 +22,7 @@ const Login = () => {
         setNotification({ message: 'Welcome', type: 'success' });
         setTimeout(() => {
           setNotification({ message: '', type: '' });
-          router.push('/bancos'); // Cambia esta ruta según tu estructura
+          router.push('/bancos2'); // Cambia esta ruta según tu estructura
         }, 1000);
       } else {
         setNotification({ message: 'Datos incorrectos', type: 'error' });
@@ -78,7 +78,3 @@ const Login = () => {
 };
 
 export default Login;
-
-
-
-

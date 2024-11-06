@@ -13,7 +13,7 @@ export default function useAuth() {
 
     if (!tkn) {
       toast.error('Debes iniciar sesión de nuevo');
-      router.push('/login');
+      router.push('/landingPage');
       return;
     }
   }, [router]);

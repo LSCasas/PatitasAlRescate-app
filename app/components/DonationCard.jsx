@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import Link from 'next/link';
 
-const DonationCard = ({ logo, name, description }) => {
+const DonationCard = ({ logo, name, description, link }) => {
   const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
@@ -28,7 +28,7 @@ const DonationCard = ({ logo, name, description }) => {
         <p className="text-gray-600 mb-2">
           {isMobile ? limitDescription(description, 20) : limitDescription(description, 40)}
         </p>
-        <Link href="/perfil">
+        <Link href={link}>
           <button className={`text-white py-2 px-4 rounded hover:bg-yellow-600 ${isMobile ? 'bg-yellow-500 text-sm' : 'bg-yellow-500 text-base'}`}>
             Ver
           </button>
@@ -39,6 +39,7 @@ const DonationCard = ({ logo, name, description }) => {
 };
 
 export default DonationCard;
+
 
 
 

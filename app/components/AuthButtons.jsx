@@ -5,7 +5,7 @@ const AuthButtons = () => {
   return (
     <div className="flex space-x-5"> 
       
-      <Link href="/inicioSesion">
+      <Link href="/verificacion">
         <button className="bg-gray-800 text-white py-2 md:px-8  px-5 rounded font-sans hover:bg-gray-900 active:bg-black">
           Iniciar Sesion
         </button>

@@ -10,7 +10,7 @@ export default function LoggedIn() {
 
     if (token) {
       toast.info('Ya tienes una sesión activa. Debes cerrar sesión para iniciar una nueva.');
-      router.push('/main');
+      router.push('/bancos');
     }
   }, [router]);
 

@@ -43,7 +43,7 @@ export default function LefthDashboard() {
        
         <div className='my-1 flex h-[120px] w-[100px] flex-col items-center bg-white rounded-[40px] p-4 shadow-md'>
           <img className='h-20 w-20' src='/img/dog5.png' alt='User' />
-          <p className='text-sm font-bold text-black'>Name</p>
+          
         </div>
       </div>
 
