@@ -16,8 +16,6 @@ export default function Register() {
 
   const onSubmit = async (data) => {
     console.log(data);
-
-    
     try {
       const response = await createUser(data);
       console.log("Response:", response);
@@ -25,10 +23,8 @@ export default function Register() {
       if (response && response.user) {
         const { name, email } = response.user;
         console.log("User:", name, email);
-
         setNotification({ message: 'Registro exitoso', type: 'success' });
 
-       
         setTimeout(() => {
           router.push('/landingPage');
         }, 1000);
@@ -43,7 +39,8 @@ export default function Register() {
   };
 
   const handleTypeChange = (event) => {
-    setShowAddress(event.target.value === "banco");
+    // Mostrar campo de dirección para "banco" y "donante"
+    setShowAddress(event.target.value === "banco" || event.target.value === "donante");
   };
 
   const password = watch("password"); 
@@ -137,7 +134,7 @@ export default function Register() {
               <label className="block text-sm font-medium text-gray-800 mb-1">Dirección</label>
               <input
                 type="text"
-                {...register("location", { required: "Dirección es requerida" })} // Cambié "address" a "location"
+                {...register("location", { required: "Dirección es requerida" })}
                 placeholder="Ingresa tu dirección"
                 className={`w-full px-4 md:py-3 py-1 border-2 ${errors.location ? "border-red-500" : "border-gray-300"} rounded-md focus:outline-none focus:border-gray-500 text-gray-800 placeholder-gray-400`}
               />
@@ -164,7 +161,6 @@ export default function Register() {
     </div>
   );
 }
-
 
 
 
