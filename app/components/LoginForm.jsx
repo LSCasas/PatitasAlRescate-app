@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { useForm } from "react-hook-form";
 import { useRouter } from "next/router";
 import { login } from '../api/api'; // Asegúrate de que la ruta de tu archivo api sea correcta
+import Link from 'next/link'; // Importa Link de next/link
 
 const Login = () => {
   const {
@@ -71,13 +72,16 @@ const Login = () => {
       )}
       <p className="text-center text-sm text-gray-600 mt-4">
         No tienes una cuenta?{" "}
-        <a href="/registro" className="text-yellow-600 hover:underline">Registrar</a>
+        <Link href="/registro"> {/* Aquí reemplazamos <a> por <Link> */}
+          <a className="text-yellow-600 hover:underline">Registrar</a>
+        </Link>
       </p>
     </div>
   );
 };
 
 export default Login;
+
 
 
 
